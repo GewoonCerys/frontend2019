@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navigation {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e22002;
+    font-size: 11px;
+}
+
+ 
+.sidenavigation {
+  transform: translateX(-100%);
+  background-color:#e22002 ;
+  margin-top: 1rem;
+  padding: 1rem .5rem;
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+ 
+.sidenavigation.active {
+  transform: translateX(0);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+    
+}
+ 
+div {
+  width: 3rem;
+  height: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 0 1rem;
+}
+
+span {
+  height: .4rem;
+  width: 100%;
+  display: block;
+  background-color: black;
+  border-radius: .5rem;
+}
+
+span::before, span::after {
+  content: '';
+  height: .4rem;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  border-radius: .5rem;
+  transition: .5s;
+}
+
+span::before {
+  top: 0px;
+}
+
+span::after {
+  bottom: 0px
+}
+
+.hamburger{
+    position:fixed;
+    z-index: 1;
+}
+.hamburger.active span {
+  background:rgba(0,0,0,0);
+  transition: .5s;
+}
+
+.hamburger.active span::before {
+  transform:rotate(135deg);
+  top: 12px;
+}
+
+.hamburger.active span::after {
+  top: 12px;
+  transform:rotate(225deg);
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+li {
+    margin: 1em;
+    list-style: none;
+
+}
+
+section {
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 65px;
+}
+
+/* Float up animatie met behulp van https://codepen.io/areteika/pen/txurk */
+.frontpageimg {
+    border-radius: 10px;
+    padding: 2px;
+    margin-top: 6px;
+    width: 100%;
+    height: auto;
+    transition: box-shadow .4s;
+    -webkit-transition: margin 0.2s ease-in;
+    -moz-transition: margin 0.2s ease-in;
+    -o-transition: margin 0.2s ease-in;
+}
+
+.frontpageimg:hover {
+    cursor: pointer;
+    margin-top: 2px;
+    box-shadow: 1px 8px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+
+footer {
+    width: auto;
+    color: white;
+    background-color: #bf0010;
+    font-size: 16px;
+    font-weight: 800;
+
+}
+
+footer > ul {
+    display: flex;
+    flex-flow: wrap;
+    text-align: left;
+}
