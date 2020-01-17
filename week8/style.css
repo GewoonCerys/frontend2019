@@ -17,11 +17,13 @@
     font-size: 11px;
 }
 
- 
+.navigation ul:nth-child(2) li:nth-child(2) {
+    padding-left: 60em;
+}
+
 .sidenavigation {
   transform: translateX(-100%);
   background-color:#e22002 ;
-  margin-top: 1rem;
   padding: 1rem .5rem;
   width: 100%;
   transition: .3s ease-in-out;
@@ -29,6 +31,7 @@
  
 .sidenavigation.active {
   transform: translateX(0);
+  padding-left: 6em;
 }
 
 ul {
@@ -36,7 +39,7 @@ ul {
   list-style-type: none;
     
 }
- 
+ /* Hamburger menu met codepen van Janno tijdens de les, https://codepen.io/Guilano/pen/jOOgZKE */
 div {
   width: 3rem;
   height: 2rem;
@@ -50,7 +53,7 @@ span {
   height: .4rem;
   width: 100%;
   display: block;
-  background-color: black;
+  background-color: white;
   border-radius: .5rem;
 }
 
@@ -59,7 +62,7 @@ span::before, span::after {
   height: .4rem;
   width: 100%;
   position: absolute;
-  background-color: black;
+  background-color: white;
   border-radius: .5rem;
   transition: .5s;
 }
