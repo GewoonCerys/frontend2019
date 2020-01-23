@@ -32,7 +32,7 @@ li {
 
 /* nintendo logo in het midden van de nav */
 nav ul:nth-child(2) li:nth-child(1) {
-    margin-right: 29vw;
+    margin: auto;
 }
 
 /* side navigation van hamburger menu */
@@ -117,6 +117,7 @@ span::after {
 section {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
     text-align: center;
 }
 
@@ -127,6 +128,7 @@ section {
     padding: 2px;
     margin-top: 6px;
     width: 100%;
+    text-align: center;
     height: auto;
     transition: box-shadow .4s;
     -webkit-transition: margin 0.2s ease-in;
@@ -160,7 +162,7 @@ main > article > section {
 section:nth-child(3) img {
     width: 25vw;
     margin-left: 40vw;
-
+    
 }
 
 /* call to action styling detailspagina */
@@ -187,7 +189,8 @@ section:nth-child(5):hover {
 }
 
 /* tekst styling detail pagina */
-h2 {
+h1, h2, h3 {
+    text-align: center;
     color: #8A1811;
     font-weight: 700;
     font-size: 40px;
@@ -293,6 +296,10 @@ footer > ul {
     text-align: left;
 }
 
+footer > p {
+    text-align: center;
+}
+
 
 /* responsive maken van elementen op de pagina's */
 @media only screen and (max-width: 40em) {
@@ -324,6 +331,22 @@ footer > ul {
         display: none;
     }
 
+    /* content blokken home veranderen wanneer het scherm 40em of kleiner wordt */
+    .frontpageimg > a,
+.frontpageimg img {
+    border-radius: 10px;
+    padding: 2px;
+    margin-top: 6px;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    transition: box-shadow .4s;
+    -webkit-transition: margin 0.2s ease-in;
+    -moz-transition: margin 0.2s ease-in;
+    -o-transition: margin 0.2s ease-in;
+}
+  
+    
     /*video veranderd wanneer het scherm 40em of kleiner wordt */
     video {
         width: 100%;
@@ -343,60 +366,59 @@ footer > ul {
     }
 
     /* andere images op detail pagina veranderen wanneer het scherm 40em of kleiner wordt */
-    main > article > section > figure > img {
-        border-radius: 10px;
-        width: 70vw;
-        height: auto;
-        margin: auto;
-        margin-bottom: 1em;
-        margin-top: 2em;
-        text-align: center;
-        display: block;
-    }
+ main > article > section > figure > img {
+    border-radius: 10px;
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    text-align: center;
+    display: block;
+}
 
     /* galar pokemon veranderen wanneer het scherm 40em of kleiner wordt */
     section:nth-child(3) img {
-        width: 30vw;
-        margin-left: 60vw;
-    }
-
+    width: 30vw;
+    margin-left: 60vw;   
+}
     /* form veranderen wanneer het scherm 40em of kleiner wordt */
     form fieldset {
-        border-radius: 10px;
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1em;
-        padding: 1em;
-    }
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+}
 
-    fieldset > label {
-        margin-top: 2em;
-        margin-bottom: .5em;
-    }
+fieldset > label {
+    margin-top: 2em;
+    margin-bottom:.5em;
+}
 
-    fieldset > input {
-        margin-top: .5em;
-        width: 20em;
-        height: 3em;
-    }
+fieldset > input {
+    margin-top: .5em;
+    width: 20em;
+    height: 3em;
+}
 
-    fieldset > input:hover {
-        outline: 1px solid black;
-    }
+fieldset > input:hover {
+    outline: 1px solid black;
+}
 
-    fieldset > input:invalid {
-        border: 1px solid red;
-    }
+fieldset > input:invalid {
+    border: 1px solid red;
+}
 
-    fieldset > input:valid {
-        border: 1px solid green;
-    }
+fieldset > input:valid {
+    border: 1px solid green;
+}
 
-    textarea {
-        width: 60vw;
-        height: auto;
-    }
+textarea {
+    width: 60vw;
+    height: auto;
+}
 
 }
