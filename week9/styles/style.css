@@ -30,6 +30,7 @@ li {
     list-style: none;
 }
 
+/* nintendo logo in het midden van de nav */
 nav ul:nth-child(2) li:nth-child(1) {
     margin-right: 29vw;
 }
@@ -159,7 +160,7 @@ main > article > section {
 section:nth-child(3) img {
     width: 25vw;
     margin-left: 40vw;
-    
+
 }
 
 /* call to action styling detailspagina */
@@ -341,48 +342,61 @@ footer > ul {
         height: auto;
     }
 
+    /* andere images op detail pagina veranderen wanneer het scherm 40em of kleiner wordt */
+    main > article > section > figure > img {
+        border-radius: 10px;
+        width: 70vw;
+        height: auto;
+        margin: auto;
+        margin-bottom: 1em;
+        margin-top: 2em;
+        text-align: center;
+        display: block;
+    }
+
     /* galar pokemon veranderen wanneer het scherm 40em of kleiner wordt */
     section:nth-child(3) img {
-    width: 30vw;
-    margin-left: 60vw;   
-}
+        width: 30vw;
+        margin-left: 60vw;
+    }
+
     /* form veranderen wanneer het scherm 40em of kleiner wordt */
     form fieldset {
-    border-radius: 10px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em;
-    padding: 1em;
-}
+        border-radius: 10px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+        padding: 1em;
+    }
 
-fieldset > label {
-    margin-top: 2em;
-    margin-bottom:.5em;
-}
+    fieldset > label {
+        margin-top: 2em;
+        margin-bottom: .5em;
+    }
 
-fieldset > input {
-    margin-top: .5em;
-    width: 20em;
-    height: 3em;
-}
+    fieldset > input {
+        margin-top: .5em;
+        width: 20em;
+        height: 3em;
+    }
 
-fieldset > input:hover {
-    outline: 1px solid black;
-}
+    fieldset > input:hover {
+        outline: 1px solid black;
+    }
 
-fieldset > input:invalid {
-    border: 1px solid red;
-}
+    fieldset > input:invalid {
+        border: 1px solid red;
+    }
 
-fieldset > input:valid {
-    border: 1px solid green;
-}
+    fieldset > input:valid {
+        border: 1px solid green;
+    }
 
-textarea {
-    width: 60vw;
-    height: auto;
-}
+    textarea {
+        width: 60vw;
+        height: auto;
+    }
 
 }
